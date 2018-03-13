@@ -11,14 +11,14 @@
 			count++;
 			if(count%2==1)
 			{
-				$.get("http://DOMAIN/switch.php?s1=1", function(){
+				$.get("http://DOMAIN/switch.php?s1=1", function(data){
 				  
 					$("span").text('ON or '+data);  
 				
 				});
 				
 			}else{
-				$.get("http://DOMAIN/switch.php?s1=0", function(){
+				$.get("http://DOMAIN/switch.php?s1=0", function(data){
 					
 					$("span").text('OFF or '+data);  
 					
