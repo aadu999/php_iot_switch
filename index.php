@@ -12,12 +12,18 @@
 			if(count%2==1)
 			{
 				$.get("http://DOMAIN/switch.php?s1=1", function(){
+				  
+					$("span").text('ON or '+data);  
+				
 				});
-				$("span").text('on');
+				
 			}else{
 				$.get("http://DOMAIN/switch.php?s1=0", function(){
-		});
-				$("span").text('off');
+					
+					$("span").text('OFF or '+data);  
+					
+				});
+				
 			}
 			
 			});
