@@ -12,7 +12,7 @@ if (mysqli_connect_errno())
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }
 
-$sql="SELECT switch_one,switch_two,switch_three FROM switch ORDER BY id DESC LIMIT 1";
+$sql="SELECT switch_one FROM switch ORDER BY id DESC LIMIT 1";
 $result=mysqli_query($con,$sql);
 
 $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
